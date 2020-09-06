@@ -22,11 +22,15 @@ def selection_sort(arr):
 
 def bubble_sort(arr):
     # Your code here
+
+    # Loop through all array elements
     swaps_occured = True
     while swaps_occured:
         swaps_occured = False
         for i in range(len(arr) - 1):
             print(arr)
+            # Swap if the element found is greater
+            # than the next element
             if arr[i] > arr[i+1]:
                 arr[i], arr[i+1] = arr[i + 1], arr[i]
                 swaps_occured = True
